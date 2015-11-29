@@ -5,11 +5,6 @@
 # Files for the Dalvik VM
 *.dex
 
-<<<<<<< HEAD
-# Java class files
-
-=======
->>>>>>> origin/master
 # Generated files
 bin/
 gen/
