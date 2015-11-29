@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:textSize="35sp"
+        android:text="@string/Titulo"/>
+
+    <TextView
+        android:id="@+id/txtViewPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewTitulo"
+        android:paddingTop="10dp"
+        android:textSize="25sp"
+        android:text="@string/priceLabel"/>
+
+    <EditText
+        android:id="@+id/edTxtPreco"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtViewPreco"
+        android:paddingLeft="5dp"
+        android:layout_alignBottom="@id/txtViewPreco"
+        android:textSize="25sp"
+        android:inputType="numberDecimal"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/btnLess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  -  "
+        android:textSize="25sp"
+        android:layout_alignBottom="@+id/txtViewPreco"
+        android:layout_alignParentRight="true"
+        android:onClick="subtrairDoSubtotal" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  +  "
+        android:textSize="25sp"
+        android:layout_alignBottom="@+id/txtViewPreco"
+        android:layout_toLeftOf="@id/btnLess"
+        android:onClick="calcularSubtotal" />
+
+    <TextView
+        android:id="@+id/txtViewSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewPreco"
+        android:paddingTop="5dp"
+        android:textSize="25sp"
+        android:text="@string/subtotalLabel" />
+
+    <TextView
+        android:id="@+id/txtViewSubtotalValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtViewSubtotal"
+        android:paddingLeft="5dp"
+        android:layout_alignBottom="@id/txtViewSubtotal"
+        android:textSize="25sp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtViewPessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewSubtotal"
+        android:paddingTop="5dp"
+        android:textSize="25sp"
+        android:text="@string/peopleLabel" />
+
+    <EditText
+        android:id="@+id/edTxtPessoas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtViewPessoas"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        android:layout_alignBottom="@id/txtViewPessoas"
+        android:inputType="number"
+        android:ems="10"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" = "
+        android:textSize="25sp"
+        android:layout_alignBottom="@+id/txtViewPessoas"
+        android:layout_alignParentRight="true"
+        android:onClick="dividirSubtotal" />
+
+    <TextView
+        android:id="@+id/txtViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewPessoas"
+        android:paddingTop="5dp"
+        android:textSize="25sp"
+        android:text="@string/totalLabel" />
+
+    <TextView
+        android:id="@+id/txtViewTotalValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtViewTotal"
+        android:paddingLeft="5dp"
+        android:layout_alignBottom="@id/txtViewTotal"
+        android:textSize="25sp"
+        android:text="0" />
+
+</RelativeLayout>

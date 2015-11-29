@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dividir Contas</string>
+    <string name="priceLabel">Preço:</string>
+    <string name="subtotalLabel">Subtotal: </string>
+    <string name="peopleLabel">Pessoas:</string>
+    <string name="totalLabel">Total/Pessoa: </string>
+    <string name="Titulo">Dividindo a conta</string>
+</resources>

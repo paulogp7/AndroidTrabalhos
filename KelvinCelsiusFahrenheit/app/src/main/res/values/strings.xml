@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">KelvinCelsiusFahrenheit</string>
+    <string name="temperatura">Temperatura:</string>
+    <string name="Digite_aqui">Digite aqui</string>
+    <string name="Celsius">ºC</string>
+    <string name="Fharenheit">ºF</string>
+    <string name="Kelvin">K</string>
+    <string name="Converter">Converter Para:</string>
+    <string name="Resultado">222</string>
+    <string name="Calcular">Converter</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    tools:context=".MainActivity"
+    android:rowCount="6"
+    android:columnCount="1">
+
+    <TextView
+        android:id="@+id/txtViewPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="@string/priceLabel"
+        android:layout_row="0" />
+
+    <EditText
+        android:id="@+id/edTxtPreco"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:layout_gravity="right"
+        android:layout_row="1" />
+
+    <TextView
+        android:id="@+id/txtViewSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="@string/subtotalLabel"
+        android:layout_row="2" />
+
+    <TextView
+        android:id="@+id/txtViewPessoas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="@string/peopleLabel"
+        android:layout_row="3" />
+
+    <EditText
+        android:id="@+id/edTxtPessoas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_gravity="right"
+        android:layout_row="4" />
+
+    <TextView
+        android:id="@+id/txtViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="@string/totalLabel"
+        android:layout_row="5" />
+
+</GridLayout>
